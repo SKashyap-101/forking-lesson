@@ -1,7 +1,19 @@
 #This is a selection sort algorithm implementation in python
 
-def selection_sort(l):
-   for i in range(len(l):
-       old_min=l[i]
-       for j in range(i+,len(l))
+def swap(l,i,j):
+  a=l[i]
+  l[i]=l[j]
+  l[j]=a
+
+ def selection_sort(l):
+    for i in range(len(l)-1):
+        min_i=i
+	for j in range(len(l)-1):
+	    if(l[i]>l[j]):
+	      min_i=j
+	swap(l,i,min_i)
+    return l
+
+
+  
       
